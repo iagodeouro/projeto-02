@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    width: 100%; height: auto; padding: 20px;
+    background-color: #d6d6d6;
+    box-shadow: 2px 2px 5px rgba(14, 13, 13, 0.3);
+    display: flex; align-items: center; justify-content: space-around;
+}
+
+header img{
+    max-width: 150px; min-width: 100px;
+}
+
+/*
+.container{
+    width: 1000px; height: 100%; margin: 0 auto;
+
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+
+.container img{
+    width: 200px;
+    padding: 30px;
+}
+
+*/
+
+main{
+    width: 1000px; height: auto; margin: 0 auto;
+    display: flex; flex-direction: column;
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5), /* Sombra na lateral direita */ -5px 0 5px -5px rgba(0, 0, 0, 0.5); /* Sombra na lateral esquerda */
+}
+
+.container-banner{
+    width: 100%; height: 500px;
+    background-image: url(../imagens/bg-form.jpg); background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: flex-end;
+}
+
+form{
+    width: 350px; height: 95%; margin-right: 5%;
+    background-color: rgba(255, 255, 255, 0.843);
+    border-radius: 5px;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+form h2{
+    font-size: 18px; font-weight: normal;
+    padding: 25px 10px;
+    background-color: rgb(210, 210, 210);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-transform: uppercase;
+}
+
+.input-container{
+    width: auto;
+    display: flex; flex-direction: column; gap: 5px;
+    margin-top: 20px; padding: 15px;
+}
+
+.input-container p{
+    font-size: 15px;
+    color: #525252;
+}
+
+.input-container input{
+    width: 320px; height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px; padding-left: 3%;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(149, 147, 147, 0.843);; /* Cor desejada para o placeholder */
+}
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 160px; height: 30px; margin-top: 15px;
+    border-radius: 25px; border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    background-color: #0670aee2; color: white;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    font-weight: bold;
+    background-color: #023e60e2; color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Novo box-shadow no hover */
+    transform: translateY(1px); /* Move o botão para baixo no hover */
+}
+
+.chamada{
+    width: 100%; height: 150px;
+    background-color: #074e78e2; color: white;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 25px;
+}
+
+.chamada h1{
+    font-size: 23px; font-weight: lighter;
+}
+
+.chamada h3{
+    font-size: 20px; font-weight: lighter;
+}
+
+
+.mosaico{
+    width: 100%; height: auto;
+    display: flex; flex-direction: column;
+}
+
+.container-mosaico1{
+    width: auto; height: 300px;
+    display: flex; flex-direction: row;
+}
+
+.container-mosaico2{
+    width: auto; height: 300px;
+    display: flex; flex-direction: row-reverse;
+}
+
+.mosaico-text{
+    width: 45%; padding: 50px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 20px;
+    background-color: #036b64e2;
+}
+
+.mosaico-text h2{
+    font-size: 25px; font-weight: normal;
+    color: white;
+}
+
+.mosaico-text p{
+    line-height: 2em;
+    font-size: 15px; font-weight: lighter; font-style: italic;
+    color: white;
+}
+
+.mosaico-image{
+    width: 55%; height: auto;
+}
+
+.mosaico-image img{
+    width: 100%; height: 100%;
+}   
+
+footer{
+    width: 100%; height: 150px;
+    display: flex; align-items: center; justify-content: center;
+    background-color: #ccc;
+}
+
+footer img{
+    width: 170px;
+}
